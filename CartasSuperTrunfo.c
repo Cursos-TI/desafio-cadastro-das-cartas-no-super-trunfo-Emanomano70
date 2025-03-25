@@ -24,7 +24,7 @@ int main() {
     printf("Digite a letra do Estado (Entre A e H): \n");
     scanf("%s", &estado_1);
 
-    printf("Digite o código da carta: \n");
+    printf("Digite o código da carta (ex:C01): \n");
     scanf("%s", &Codigo_1);
 
     printf("Digite o nome da cidade: \n");
@@ -43,6 +43,7 @@ int main() {
     scanf("%d", &pontosturisticos_1);
 
     printf("***Escreva os dados da Carta 2***\n");
+
 
     printf("Digite a letra do Estado (Entre A e H): \n");
     scanf("%s", &estado_2);
@@ -64,9 +65,10 @@ int main() {
 
     //Dados da primeira carta.
     printf("Novo commit\n");
-    
+
 
     printf("\nCarta1:\n");
+
     printf("Estado:%c\n", estado_1);
     printf("Código:%d\n", Codigo_1);
     printf("Nome da Cidade:%s\n", Cidade_1);
@@ -74,6 +76,8 @@ int main() {
     printf("Área:%2fkm²\n", Area_1);
     printf("Pib:%2fbilhões de reais\n", pib_1);
     printf("Número de Pontos Turísticos:%d\n", pontosturisticos_1);
+
+    printf("Novo commit\n");
 
 
 

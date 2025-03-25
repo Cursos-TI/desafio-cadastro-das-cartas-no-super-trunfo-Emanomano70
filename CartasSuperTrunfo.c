@@ -10,11 +10,11 @@ int main() {
     printf("Desafio SuperTrunfo!\n");
     printf("Novo commit\n");
 
-    char estado_1,estado_2[50];
-    char Codigo_1,Codigo_2[5];
-    char Cidade_1,Cidade_2[50];
-    int Populacao_1,Populacao_2;
-    float Area_1,Area_2;
+    char estado_1,estado_2;
+    char codigo_1[20],codigo_2[20];
+    char cidade_1[50],cidade_2[50];
+    int populacao_1,populacao_2;
+    float area_1,area_2;
     float pib_1,pib_2;
     int pontosturisticos_1,pontosturisticos_2;
 
@@ -25,16 +25,16 @@ int main() {
     scanf("%s", &estado_1);
 
     printf("Digite o código da carta (ex:C01): \n");
-    scanf("%s", &Codigo_1);
+    scanf("%s", codigo_1);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &Cidade_1);
+   scanf("%s", cidade_1);
 
     printf("Digite a população: \n");
-    scanf("%d", &Populacao_1);
+    scanf("%d", &populacao_1);
 
     printf("Digite a Área: \n");
-    scanf("%f", &Area_1);
+    scanf("%f", &area_1);
 
     printf("Digite o PIB: \n");
     scanf("%f", &pib_1);
@@ -49,16 +49,16 @@ int main() {
     scanf("%s", &estado_2);
 
     printf("Digite o código da carta: \n");
-    scanf("%s", &Codigo_2);
+    scanf("%s", &codigo_2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &Cidade_2);
+    scanf("%s", &cidade_2);
 
     printf("Digite a população: \n");
-    scanf("%d", &Populacao_2);
+    scanf("%d", &populacao_2);
 
     printf("Digite a Área: \n");
-    scanf("%d", &Area_2);
+    scanf("%d", &area_2);
 
     printf("Digite o PIB: \n");
     scanf("%f", &pib_2);
@@ -67,14 +67,14 @@ int main() {
     printf("Novo commit\n");
 
 
-    printf("\nCarta1:\n");
+    printf("\nCarta 1:\n");
 
     printf("Estado:%c\n", estado_1);
-    printf("Código:%d\n", Codigo_1);
-    printf("Nome da cidade:%s\n", Cidade_1);
-    printf("População:%i\n", Populacao_1);
-    printf("Área:%2fkm²\n", Area_1);
-    printf("Pib:%2fbilhões de reais\n", pib_1);
+    printf("Código:%s\n", codigo_1);
+    printf("Cidade:%s\n", cidade_1);
+    printf("População:%i de habitantes\n", populacao_1);
+    printf("Área:%2fkm²\n", area_1);
+    printf("Pib:%2f bilhões de reais\n", pib_1);
     printf("Número de Pontos Turísticos:%d\n", pontosturisticos_1);
 
     printf("Novo commit\n");

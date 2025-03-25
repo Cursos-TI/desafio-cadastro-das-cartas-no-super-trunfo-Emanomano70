@@ -34,7 +34,7 @@ int main() {
     scanf("%d", &Populacao_1);
 
     printf("Digite a Área: \n");
-    scanf("%d", &Area_1);
+    scanf("%f", &Area_1);
 
     printf("Digite o PIB: \n");
     scanf("%f", &pib_1);
@@ -71,8 +71,8 @@ int main() {
 
     printf("Estado:%c\n", estado_1);
     printf("Código:%d\n", Codigo_1);
-    printf("Nome da Cidade:%s\n", Cidade_1);
-    printf("População:%d\n", Populacao_1);
+    printf("Nome da cidade:%s\n", Cidade_1);
+    printf("População:%i\n", Populacao_1);
     printf("Área:%2fkm²\n", Area_1);
     printf("Pib:%2fbilhões de reais\n", pib_1);
     printf("Número de Pontos Turísticos:%d\n", pontosturisticos_1);

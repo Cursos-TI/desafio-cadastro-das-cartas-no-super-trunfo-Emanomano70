@@ -24,13 +24,13 @@ int main() {
 
     //Dados da Carta 2
 
-    char estado2;
-    char codigo2[20];
-    char cidade2[50];
-    int populacao2;
-    float area2;
-    float pib2;
-    int pontosturisticos2;
+    char estado_2;
+    char codigo_2[20];
+    char cidade_2[50];
+    int populacao_2;
+    float area_2;
+    float pib_2;
+    int pontosturisticos_2;
 
     //Entrada e armazenamento das informaçoes das cartas 1 e 2.
 
@@ -65,32 +65,32 @@ int main() {
     printf("***Escreva os dados da Carta 2***\n");
 
 
-    printf("Digite a letra do Estado (Entre A e H): \n");
-    scanf("%c", &estado2);
+    printf("Digite a letra do estado (Entre A e H):\n");
+    scanf("%s", &estado_2);
 
     printf("Digite o código da carta: \n");
-    scanf("%s", codigo2);
+    scanf("%s", codigo_2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", cidade2);
+    scanf("%s", cidade_2);
 
     printf("Digite a população: \n");
-    scanf("%d", &populacao2);
+    scanf("%d", &populacao_2);
 
     printf("Digite a Área: \n");
-    scanf("%f", &area2);
+    scanf("%f", &area_2);
 
     printf("Digite o PIB: \n");
-    scanf("%f", &pib2);
+    scanf("%f", &pib_2);
 
     printf("Digite o número de pontos turísticos: \n");
-    scanf("%d", &pontosturisticos2);
+    scanf("%d", &pontosturisticos_2);
 
     //Dados da primeira carta.
     printf("Novo commit\n");
 
 
-    printf("\nCarta 1:\n");
+    printf("Carta 1:\n");
 
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -104,15 +104,15 @@ int main() {
 
     //Dados da segunda carta.
 
-    printf("\nCarta 2:\n");
+    printf("Carta 2:\n");
 
-    printf("Estado: %c\n", estado2);
-    printf("Código: %s\n", codigo2);
-    printf("Cidade: %s\n", cidade2);
-    printf("População: %d de habitantes\n", populacao2);
-    printf("Área: %2f km²\n", area2);
-    printf("Pib: %2f bilhões de reais\n", pib2);
-    printf("Número de Pontos Turísticos: %d\n", pontosturisticos2);
+    printf("Estado: %c\n", estado_2);
+    printf("Código: %s\n", codigo_2);
+    printf("Cidade: %s\n", cidade_2);
+    printf("População: %d de habitantes\n", populacao_2);
+    printf("Área: %2f km²\n", area_2);
+    printf("Pib: %2f bilhões de reais\n", pib_2);
+    printf("Número de Pontos Turísticos: %d\n", pontosturisticos_2);
 
     return 0;
 

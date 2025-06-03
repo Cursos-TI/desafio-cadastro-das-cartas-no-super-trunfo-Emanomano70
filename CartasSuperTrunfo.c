@@ -1,18 +1,11 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-
 int main() {
     // Dados da Carta 1
     char estado1;
     char codigo1[10];
     char nomeCidade1[100];
-    int populacao1;
+    int populacao1;  
     float area1;
     float pib1;
     int pontosTuristicos1;
@@ -21,10 +14,15 @@ int main() {
     char estado2;
     char codigo2[10];
     char nomeCidade2[100];
-    int populacao2;
+    int populacao2;  
     float area2;
     float pib2;
     int pontosTuristicos2;
+
+    // Variáveis para cálculos
+    float densidade1, densidade2;
+    float pibPerCapita1, pibPerCapita2;
+    float superPoder1, superPoder2;
 
     // Entrada dos dados da Carta 1
     printf("Carta 1:\n");
@@ -73,14 +71,19 @@ int main() {
 
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
-    printf("Novo Commit\n")
+
+    printf("Novo Commit\n");
 
     // Cálculos
-    float densidade1 = populacao1 / area1;
-    float pibPerCapita1 = (pib1 * 1000000000) / populacao1;
+    densidade1 = (float)populacao1 / area1;
+    pibPerCapita1 = (pib1 * 1000000000) / populacao1;
 
-    float densidade2 = populacao2 / area2;
-    float pibPerCapita2 = (pib2 * 1000000000) / populacao2;
+    densidade2 = (float)populacao2 / area2;
+    pibPerCapita2 = (pib2 * 1000000000) / populacao2;
+
+    // Cálculo do Super Poder:
+    superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + (1.0f / densidade1);
+    superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapita2 + (1.0f / densidade2);
 
     // Saída dos dados da Carta 1
     printf("\nCarta 1:\n");
@@ -93,6 +96,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
+    printf("Super Poder: %.2f\n", superPoder1);
 
     // Saída dos dados da Carta 2
     printf("\nCarta 2:\n");
@@ -105,26 +109,31 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
+    printf("Super Poder: %.2f\n", superPoder2);
 
-    return 0;
-}
+    // Comparação dos atributos:
+    printf("\nComparação de Cartas:\n");
 
+    // População: maior vence
+    printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2 ? 1 : 0);
 
+    // Área: maior vence
+    printf("Área: Carta 1 venceu (%d)\n", area1 > area2 ? 1 : 0);
 
-    
+    // PIB: maior vence
+    printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2 ? 1 : 0);
 
-    
+    // Pontos Turísticos: maior vence
+    printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontosTuristicos1 > pontosTuristicos2 ? 1 : 0);
 
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Densidade Populacional: menor vence
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2 ? 1 : 0);
 
+    // PIB per Capita: maior vence
+    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibPerCapita1 > pibPerCapita2 ? 1 : 0);
+
+    // Super Poder: maior vence
+    printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2 ? 1 : 0);
+printf("Novo Commit\n");
     return 0;
 }
